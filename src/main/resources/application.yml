@@ -1,2 +1,12 @@
 server:
   port : 8090
+
+crud:
+  create: java:jms/queue/music/create
+  create-answer: java:jms/queue/music/create-answer
+  read: java:jms/queue/music/askedBy
+  read-answer: java:jms/queue/music/askedBy-answer
+  update: java:jms/queue/music/update
+  update-answer: java:jms/queue/music/update-answer
+  delete: java:jms/queue/music/delete
+  delete-answer: java:jms/queue/music/delete-answer

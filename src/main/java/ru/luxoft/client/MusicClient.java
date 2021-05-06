@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Evgeniy_Medvedev
  */
 @SpringBootApplication
-//liqubase or flyway read about kafka
 public class MusicClient {
 
     public static void main(String[] args) {

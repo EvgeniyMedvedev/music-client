@@ -5,7 +5,6 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * ClientController.
@@ -17,7 +16,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ClientController {
 
     private final JmsTemplate jmsTemplate;
-
 
     @GetMapping("/")
     public String hello(Model model) {
