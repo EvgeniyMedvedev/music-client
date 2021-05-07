@@ -1,3 +1,4 @@
 # music-client
 
-Фронтенд для сервиса music с взаимодействием по JMS
+Клиент сервиса [music](https://github.com/EvgeniyMedvedev/music)
+  с взаимодействием по JMS
