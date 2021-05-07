@@ -17,4 +17,9 @@ public class QueueProperty {
     private String updateAnswer;
     private String delete;
     private String deleteAnswer;
+    private String authentication;
+    private String authenticationAnswer;
+    private String readUserByLogin;
+    private String readUserByLoginAnswer;
+    private String createUser;
 }

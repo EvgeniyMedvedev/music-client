@@ -24,7 +24,6 @@ import java.util.Map;
  */
 @Configuration
 @EnableJms
-
 public class JMSConfiguration {
 
     @Bean
@@ -34,16 +33,6 @@ public class JMSConfiguration {
         // This provides all boot's default to this factory, including the message converter
         configurer.configure(factory, connectionFactory);
         // You could still override some of Boot's default if necessary.
-        return factory;
-    }
-
-    @Bean
-    public ConnectionFactory jmsFactory(){
-        ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory();
-        factory.setBrokerURL("tcp://localhost:61616");
-        factory.setUserName("admin");
-        factory.setPassword("admin");
-
         return factory;
     }
 

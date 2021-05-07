@@ -17,12 +17,6 @@ public class ClientController {
 
     private final JmsTemplate jmsTemplate;
 
-    @GetMapping("/")
-    public String hello(Model model) {
-        model.addAttribute("user", "user");
-        return "hello";
-    }
-
     @GetMapping("/crud")
     public String crud() {
         return "users";
@@ -33,6 +27,8 @@ public class ClientController {
     public String admin() {
         return "redirect:/";
     }
+
+
 
 
 }
